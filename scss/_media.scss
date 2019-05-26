@@ -3,6 +3,10 @@
   #header-home {
     height: 30rem;
   }
+
+  #home-b .content {
+    padding: 1rem;
+  }
 }
 
 // Smartphones
@@ -12,7 +16,7 @@
     align-items: center;
 
     li {
-      padding: 1rem;
+      padding: 1rem 0.4rem;
     }
   }
 
@@ -35,8 +39,6 @@
 
   // Stack Grid Columns
   #home-a .specials,
-  #home-b .stats,
-  #home-c .process,
   #about-d .testimonials,
   #contact-b .contact-info,
   .items {
@@ -54,12 +56,6 @@
           border: none;
           padding-bottom: 0;
         }
-      }
-    }
-
-    &-b {
-      .stats div {
-        padding: 2rem 0 1rem 0;
       }
     }
   }

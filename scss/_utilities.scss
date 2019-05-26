@@ -126,3 +126,16 @@ input[class^="btn-"]:hover {
   display: block;
   margin: 0 auto 1rem auto;
 }
+
+.large-bottom-line {
+  height: 2px;
+  width: 90%;
+  background: $medium-color;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-link {
+  font-weight: bold;
+  color: $main-color;
+}
