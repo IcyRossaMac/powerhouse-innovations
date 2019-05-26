@@ -77,14 +77,27 @@ img {
 #header {
   // Header Home
   &-home {
-    background: $bg-image no-repeat center right / cover;
+    background: linear-gradient(
+        to right,
+        rgba(150, 201, 61, 0.8),
+        rgba(0, 176, 155, 0.8)
+      ),
+      $bg-image no-repeat center top / cover;
     height: 100vh;
     color: #fff;
+    position: relative;
 
     // Header Content
     .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       text-align: center;
-      padding-top: 20%;
+
+      .lead {
+        margin-bottom: 0;
+      }
 
       h1 {
         font-size: 4rem;
@@ -95,7 +108,12 @@ img {
 
   // Header Inner
   &-inner {
-    background: $bg-image no-repeat 20% 30% / cover;
+    background: linear-gradient(
+        to right,
+        rgba(150, 201, 61, 0.8),
+        rgba(0, 176, 155, 0.8)
+      ),
+      $bg-image no-repeat 20% 30% / cover;
     height: 5.5rem;
     border-bottom: 3px solid $main-color;
   }
