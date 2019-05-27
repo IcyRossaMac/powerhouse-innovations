@@ -101,6 +101,15 @@ input[class^="btn-"]:hover {
   font-weight: bold;
   color: #d4af37; }
 
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 6rem;
+  right: 2rem;
+  z-index: 99;
+  color: #d4af37;
+  cursor: pointer; }
+
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -426,6 +435,14 @@ img {
       margin-bottom: 0; }
   #contact-c h1 {
     font-size: 2rem; }
+  #scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 8rem;
+    right: 0.75rem;
+    z-index: 99;
+    color: #d4af37;
+    cursor: pointer; }
   #main-footer {
     height: 7rem; }
     #main-footer .footer-content {

@@ -139,3 +139,13 @@ input[class^="btn-"]:hover {
   font-weight: bold;
   color: $main-color;
 }
+
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 6rem;
+  right: 2rem;
+  z-index: 99;
+  color: $main-color;
+  cursor: pointer;
+}

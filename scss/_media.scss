@@ -112,6 +112,17 @@
     }
   }
 
+  // Scroll
+  #scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 8rem;
+    right: 0.75rem;
+    z-index: 99;
+    color: $main-color;
+    cursor: pointer;
+  }
+
   // Footer
   #main-footer {
     height: 7rem;
