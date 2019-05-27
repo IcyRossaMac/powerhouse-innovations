@@ -231,10 +231,10 @@ img {
     #main-nav a:hover {
       border-color: #ccc; }
     #main-nav a.current {
-      border-color: #d4af37; }
+      border-color: #f4f4f4; }
 
 #header-home {
-  background: linear-gradient(to right, rgba(150, 201, 61, 0.8), rgba(0, 176, 155, 0.8)), url("../img/showcase.jpg") no-repeat center top/cover;
+  background: linear-gradient(to right, rgba(150, 201, 61, 0.8), rgba(0, 176, 155, 0.8)), url("../img/showcase.jpg") no-repeat 33% 80%;
   height: 100vh;
   color: #fff;
   position: relative; }
@@ -251,7 +251,7 @@ img {
       line-height: 1.2; }
 
 #header-inner {
-  background: linear-gradient(to right, rgba(150, 201, 61, 0.8), rgba(0, 176, 155, 0.8)), url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  background: linear-gradient(to right, rgba(150, 201, 61, 0.8), rgba(0, 176, 155, 0.8)), url("../img/showcase.jpg") no-repeat 33% 60%;
   height: 5.5rem;
   border-bottom: 3px solid #d4af37; }
 
@@ -263,10 +263,18 @@ img {
   #home-a .specials .fas {
     color: #d4af37;
     padding-bottom: 0.4rem; }
+  #home-a .specials p {
+    padding: 0 1rem; }
 
 #home-b .content {
   padding: 0 5rem; }
   #home-b .content p {
+    margin-bottom: 1rem;
+    text-align: left; }
+
+#investors-a .content {
+  padding: 0 5rem; }
+  #investors-a .content p {
     margin-bottom: 1rem;
     text-align: left; }
 
@@ -390,9 +398,14 @@ img {
 
 @media (max-width: 768px) {
   #header-home {
-    height: 30rem; }
-  #home-b .content {
-    padding: 1rem; } }
+    height: 30rem;
+    background-position: 26% 75%; }
+  #home-b .content,
+  #investors-a .content {
+    padding: 1rem; }
+  #scroll-to-top {
+    bottom: 6rem;
+    right: 0.75rem; } }
 
 @media (max-width: 500px) {
   #main-nav {
@@ -401,12 +414,13 @@ img {
     #main-nav li {
       padding: 1rem 0.4rem; }
   #header-home {
-    background-position: 20% 30%;
+    background-position: 30% 50%;
     height: 10rem;
     border-bottom: 3px solid #d4af37; }
     #header-home .header-content {
       display: none; }
   #header-inner {
+    background-position: 30% 50%;
     height: 10rem; }
   #home-a .specials,
   #about-d .testimonials,
@@ -436,13 +450,8 @@ img {
   #contact-c h1 {
     font-size: 2rem; }
   #scroll-to-top {
-    display: none;
-    position: fixed;
     bottom: 8rem;
-    right: 0.75rem;
-    z-index: 99;
-    color: #d4af37;
-    cursor: pointer; }
+    right: 0.75rem; }
   #main-footer {
     height: 7rem; }
     #main-footer .footer-content {

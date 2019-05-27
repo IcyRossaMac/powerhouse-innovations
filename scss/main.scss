@@ -68,7 +68,7 @@ img {
     }
 
     &.current {
-      border-color: $main-color;
+      border-color: $light-color;
     }
   }
 }
@@ -82,7 +82,7 @@ img {
         rgba(150, 201, 61, 0.8),
         rgba(0, 176, 155, 0.8)
       ),
-      $bg-image no-repeat center top / cover;
+      $bg-image no-repeat 33% 80%;
     height: 100vh;
     color: #fff;
     position: relative;
@@ -113,7 +113,7 @@ img {
         rgba(150, 201, 61, 0.8),
         rgba(0, 176, 155, 0.8)
       ),
-      $bg-image no-repeat 20% 30% / cover;
+      $bg-image no-repeat 33% 60%;
     height: 5.5rem;
     border-bottom: 3px solid $main-color;
   }
@@ -133,11 +133,29 @@ img {
         color: $main-color;
         padding-bottom: 0.4rem;
       }
+
+      p {
+        padding: 0 1rem;
+      }
     }
   }
 
   // Home Section B
   &-b {
+    .content {
+      padding: 0 5rem;
+
+      p {
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+    }
+  }
+}
+
+// Investors Section
+#investors {
+  &-a {
     .content {
       padding: 0 5rem;
 
