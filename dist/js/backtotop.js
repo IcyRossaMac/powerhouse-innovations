@@ -5,8 +5,8 @@ window.onscroll = function() {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 500 ||
-    document.documentElement.scrollTop > 500
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
   ) {
     document.getElementById("scroll-to-top").style.display = "block";
   } else {

@@ -128,8 +128,9 @@ input[class^="btn-"]:hover {
 }
 
 .large-bottom-line {
+  max-width: $website-width;
+  width: 80%;
   height: 2px;
-  width: 90%;
   background: $medium-color;
   display: block;
   margin: 0 auto;
@@ -144,7 +145,7 @@ input[class^="btn-"]:hover {
   display: none;
   position: fixed;
   bottom: 6rem;
-  right: 2rem;
+  right: 1rem;
   z-index: 99;
   color: $main-color;
   cursor: pointer;

@@ -6,7 +6,8 @@
   }
 
   #home-b .content,
-  #investors-a .content {
+  #investors-a .content,
+  #partners-a .content {
     padding: 1rem;
   }
 
@@ -47,7 +48,6 @@
 
   // Stack Grid Columns
   #home-a .specials,
-  #about-d .testimonials,
   #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr;
@@ -65,24 +65,6 @@
           padding-bottom: 0;
         }
       }
-    }
-  }
-
-  // About
-  #about {
-    &-a {
-      .about-info {
-        grid-template-areas:
-          "bioimage"
-          "bio"
-          "aw1"
-          "aw2"
-          "aw3";
-      }
-    }
-
-    &-c {
-      display: none;
     }
   }
 

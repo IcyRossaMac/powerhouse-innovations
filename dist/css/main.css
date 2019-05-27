@@ -91,8 +91,9 @@ input[class^="btn-"]:hover {
   margin: 0 auto 1rem auto; }
 
 .large-bottom-line {
+  max-width: 1280px;
+  width: 80%;
   height: 2px;
-  width: 90%;
   background: #ccc;
   display: block;
   margin: 0 auto; }
@@ -105,7 +106,7 @@ input[class^="btn-"]:hover {
   display: none;
   position: fixed;
   bottom: 6rem;
-  right: 2rem;
+  right: 1rem;
   z-index: 99;
   color: #d4af37;
   cursor: pointer; }
@@ -267,82 +268,32 @@ img {
     padding: 0 1rem; }
 
 #home-b .content {
-  padding: 0 5rem; }
+  padding: 0 1rem; }
   #home-b .content p {
     margin-bottom: 1rem;
     text-align: left; }
 
 #investors-a .content {
-  padding: 0 5rem; }
+  padding: 0 1rem; }
   #investors-a .content p {
     margin-bottom: 1rem;
     text-align: left; }
-
-#about-a .about-info {
-  display: grid;
-  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
-  grid-gap: 1.2rem; }
-
-#about-a .bio-image {
-  grid-area: bioimage; }
-
-#about-a .bio {
-  grid-area: bio;
-  border-left: 3px solid #d4af37;
-  padding: 0.8rem; }
-
-#about-a .award-1 {
-  grid-area: aw1; }
-
-#about-a .award-2 {
-  grid-area: aw2; }
-
-#about-a .award-3 {
-  grid-area: aw3; }
-
-#about-a .award-1 .fas,
-#about-a .award-2 .fas,
-#about-a .award-3 .fas {
-  color: #d4af37;
-  margin: 1rem; }
-
-#about-b .progress {
-  overflow: hidden;
-  height: 20px;
-  background: #ccc;
-  border-radius: 5px;
-  margin-bottom: 0.6rem; }
-  #about-b .progress div {
-    height: 100%;
-    color: #fff;
+  #investors-a .content .stat {
+    background: linear-gradient(to right, rgba(150, 201, 61, 0.8), rgba(0, 176, 155, 0.8));
     text-align: center;
-    background: #d4af37; }
-
-#about-c .about-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
-  #about-c .about-logos img {
-    width: 70%; }
-
-#about-d .testimonials {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5rem; }
-  #about-d .testimonials ul {
-    list-style: none;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center; }
-  #about-d .testimonials p {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    font-weight: bold;
     padding: 0.5rem; }
-  #about-d .testimonials img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 0.5rem; }
+
+#partners-a .content {
+  padding: 0 1rem; }
+  #partners-a .content p {
+    margin-bottom: 1rem;
+    text-align: left; }
+  #partners-a .content a {
+    text-decoration: underline;
+    color: #d4af37; }
 
 #contact-a .text-fields {
   display: grid;
@@ -401,7 +352,8 @@ img {
     height: 30rem;
     background-position: 26% 75%; }
   #home-b .content,
-  #investors-a .content {
+  #investors-a .content,
+  #partners-a .content {
     padding: 1rem; }
   #scroll-to-top {
     bottom: 6rem;
@@ -423,7 +375,6 @@ img {
     background-position: 30% 50%;
     height: 10rem; }
   #home-a .specials,
-  #about-d .testimonials,
   #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr; }
@@ -433,10 +384,6 @@ img {
     #home-a .specials div:last-child {
       border: none;
       padding-bottom: 0; }
-  #about-a .about-info {
-    grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
-  #about-c {
-    display: none; }
   #contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message"; }
   #contact-b .contact-info div {
