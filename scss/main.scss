@@ -234,6 +234,9 @@ img {
 
       .text-input {
         padding: 0.5rem;
+        border-radius: 10px;
+        border: 1px solid $medium-color;
+        outline: none;
       }
     }
 
@@ -247,13 +250,6 @@ img {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       text-align: center;
-    }
-  }
-
-  &-c {
-    h1 {
-      text-align: center;
-      font-size: 4rem;
     }
   }
 }
