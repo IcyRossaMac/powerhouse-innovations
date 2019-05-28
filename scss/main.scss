@@ -198,6 +198,36 @@ img {
   }
 }
 
+// Drawings Sections
+#drawings {
+  &-a {
+    .drawings-info {
+      display: grid;
+      grid-template-areas: "drawingsimage info";
+      grid-gap: 1.2rem;
+    }
+
+    .drawings-image {
+      grid-area: drawingimage;
+    }
+
+    .info {
+      grid-area: info;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+      text-align: left;
+    }
+
+    .pdf {
+      li a {
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
 // Contact Page
 #contact {
   &-a {

@@ -296,6 +296,23 @@ img {
     text-decoration: underline;
     color: #d4af37; }
 
+#drawings-a .drawings-info {
+  display: grid;
+  grid-template-areas: "drawingsimage info";
+  grid-gap: 1.2rem; }
+
+#drawings-a .drawings-image {
+  grid-area: drawingimage; }
+
+#drawings-a .info {
+  grid-area: info;
+  border-left: 3px solid #d4af37;
+  padding: 0.8rem;
+  text-align: left; }
+
+#drawings-a .pdf li a:hover {
+  color: #d4af37; }
+
 #contact-a .text-fields {
   display: grid;
   grid-template-areas: "name email" "subject phone" "message message";
@@ -396,6 +413,8 @@ img {
       margin-bottom: 0; }
   #contact-c h1 {
     font-size: 2rem; }
+  #drawings-a .drawings-info {
+    grid-template-areas: "drawingsimage" "info"; }
   #scroll-to-top {
     bottom: 8rem;
     right: 0.75rem; }

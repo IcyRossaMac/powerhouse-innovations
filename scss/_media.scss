@@ -102,6 +102,17 @@
     }
   }
 
+  // Drawings
+  #drawings {
+    &-a {
+      .drawings-info {
+        grid-template-areas:
+          "drawingsimage"
+          "info";
+      }
+    }
+  }
+
   // Scroll
   #scroll-to-top {
     bottom: 8rem;
